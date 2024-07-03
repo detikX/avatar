@@ -59,17 +59,17 @@
                 wind-right 0.5s ease 0s 1,
                 vibration-right 0.1s ease 0.5s infinite;
         }
-        &:hover {
-            &:after {
-                transition: all 0.5s ease 0s;
-                animation:
-                    wind-left 0.5s ease 0s 1,
-                    vibration-left 0.1s ease 0.5s infinite;
-            }
-            & ~ .leaf {
-                left: -5vmin;
-            }
-        }
+        // &:hover {
+        //     &:after {
+        //         transition: all 0.5s ease 0s;
+        //         animation:
+        //             wind-left 0.5s ease 0s 1,
+        //             vibration-left 0.1s ease 0.5s infinite;
+        //     }
+        //     & ~ .leaf {
+        //         left: -5vmin;
+        //     }
+        // }
     }
 
     @keyframes vibration-left {
