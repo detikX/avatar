@@ -1,15 +1,15 @@
 
 
 //timeline js sticky
-var $ = jQuery.noConflict();
-window.onload = () => {
-    if ($(".company-timeline-year").length) {
-        $(".timeline-date .date").html(function (i, html) {
-            var chars = $.trim(html).split("");
-            return "<span>" + chars.join("</span><span>") + "</span>";
-        });
-    }
-};
+// var $ = jQuery.noConflict();
+
+if ($(".company-timeline-year").length) {
+    $(".timeline-date .date").html(function (i, html) {
+        var chars = $.trim(html).split("");
+        return "<span>" + chars.join("</span><span>") + "</span>";
+    });
+}
+
 
 window.onscroll = (e) => {
     $(".company-timeline-block").each(function (event) {
@@ -43,36 +43,36 @@ window.onscroll = (e) => {
     });
 };
 
-$.ajax({
-    url: "./js/hutanadat.json",
-    method: 'GET',
-    success: function (response) {
-        // console.log(response.features);
-        var a;
-        for (a = 0; a < response.features.length; a++) {
+// $.ajax({
+//     url: "./js/hutanadat.json",
+//     method: 'GET',
+//     success: function (response) {
+//         // console.log(response.features);
+//         var a;
+//         for (a = 0; a < response.features.length; a++) {
 
-            // console.log(response.features[a].properties.clip);
-            var tahun = response.features[a].properties.tahun;
-            var clip = response.features[a].properties.clip;
-            var judul = response.features[a].properties.judul;
-            console.log();
-            // $(".company-timeline-wrapper").append(
-            //     `
-            //     <div class="company-timeline-list">
-            //         <div class="company-timeline-year">
-            //             <div class="timeline-date">
-            //                 <div class="date">${tahun}</div>
-            //                 <span class="circle"></span>
-            //             </div>
+//             // console.log(response.features[a].properties.clip);
+//             var tahun = response.features[a].properties.tahun;
+//             var clip = response.features[a].properties.clip;
+//             var judul = response.features[a].properties.judul;
+//             console.log();
+//             // $(".company-timeline-wrapper").append(
+//             //     `
+//             //     <div class="company-timeline-list">
+//             //         <div class="company-timeline-year">
+//             //             <div class="timeline-date">
+//             //                 <div class="date">${tahun}</div>
+//             //                 <span class="circle"></span>
+//             //             </div>
 
-            //         </div>
-            //     </div>
-            // `
-            // )
-        }
-    }
+//             //         </div>
+//             //     </div>
+//             // `
+//             // )
+//         }
+//     }
 
-})
+// })
 {/* <div class="company-timeline-slider">
     <div class="company-timeline-block ">
         <div class="block-inner">
