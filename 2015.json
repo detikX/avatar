@@ -1,0 +1,23 @@
+{loops: null, konflik: 67, dampak: 8631, luas: 1589219.424, investasi: "Rp 0,00 ",…
+}
+dampak
+: 8631
+features
+: [
+    {type: "Feature", geometry: {type: "Point", coordinates: [
+                120.40482,
+                -2.51744
+            ]
+        },…
+    },…
+]
+investasi
+: "Rp 0,00 "
+konflik
+: 67
+loops
+: null
+luas
+: 1589219.424
+type
+: "FeatureCollection"
